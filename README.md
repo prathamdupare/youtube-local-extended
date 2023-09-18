@@ -1,11 +1,12 @@
 # youtube-local
 
-![screenshot](https://user-images.githubusercontent.com/28744867/64483429-8a890780-d1b6-11e9-8423-6956ff7c588d.png)
+![screenshot](images/screenshot.png)
 youtube-local is a browser-based client written in Python for watching Youtube anonymously and without the lag of the slow page used by Youtube. One of the primary features is that all requests are routed through Tor, except for the video file at googlevideo.com. This is analogous to what HookTube (defunct) and Invidious do, except that you do not have to trust a third-party to respect your privacy. The assumption here is that Google won't put the effort in to incorporate the video file requests into their tracking, as it's not worth pursuing the incredibly small number of users who care about privacy (Tor video routing is also provided as an option). Tor has high latency, so this will not be as fast network-wise as regular Youtube. However, using Tor is optional; when not routing through Tor, video pages may load faster than they do with Youtube's page depending on your browser.
 
 The Youtube API is not used, so no keys or anything are needed. It uses the same requests as the Youtube webpage.
 
 ## Screenshots
+
 [Gray theme](https://user-images.githubusercontent.com/28744867/64483431-8e1c8e80-d1b6-11e9-999c-14d36ddd582f.png)
 
 [Dark theme](https://user-images.githubusercontent.com/28744867/64483432-8fe65200-d1b6-11e9-90bd-32869542e32e.png)
@@ -17,36 +18,38 @@ The Youtube API is not used, so no keys or anything are needed. It uses the same
 [Downloads](https://user-images.githubusercontent.com/28744867/64483437-a2608b80-d1b6-11e9-9e5a-4114391b7304.png)
 
 ## Features
-* Standard pages of Youtube: search, channels, playlists
-* Anonymity from Google's tracking by routing requests through Tor
-* Local playlists: These solve the two problems with creating playlists on Youtube: (1) they're datamined and (2) videos frequently get deleted by Youtube and lost from the playlist, making it very difficult to find a reupload as the title of the deleted video is not displayed.
-* Themes: Light, Gray, and Dark
-* Subtitles
-* Easily download videos or their audio
-* No ads
-* View comments
-* Javascript not required
-* Theater and non-theater mode
-* Subscriptions that are independent from Youtube
-  * Can import subscriptions from Youtube
-  * Works by checking channels individually
-  * Can be set to automatically check channels.
-  * For efficiency of requests, frequency of checking is based on how quickly channel posts videos
-  * Can mute channels, so as to have a way to "soft" unsubscribe. Muted channels won't be checked automatically or when using the "Check all" button. Videos from these channels will be hidden.
-  * Can tag subscriptions to organize them or check specific tags
-* Fast page
-  * No distracting/slow layout rearrangement
-  * No lazy-loading of comments; they are ready instantly.
-* Settings allow fine-tuned control over when/how comments or related videos are shown:
+
+- Standard pages of Youtube: search, channels, playlists
+- Anonymity from Google's tracking by routing requests through Tor
+- Local playlists: These solve the two problems with creating playlists on Youtube: (1) they're datamined and (2) videos frequently get deleted by Youtube and lost from the playlist, making it very difficult to find a reupload as the title of the deleted video is not displayed.
+- Themes: Light, Gray, and Dark
+- Subtitles
+- Easily download videos or their audio
+- No ads
+- View comments
+- Javascript not required
+- Theater and non-theater mode
+- Subscriptions that are independent from Youtube
+  - Can import subscriptions from Youtube
+  - Works by checking channels individually
+  - Can be set to automatically check channels.
+  - For efficiency of requests, frequency of checking is based on how quickly channel posts videos
+  - Can mute channels, so as to have a way to "soft" unsubscribe. Muted channels won't be checked automatically or when using the "Check all" button. Videos from these channels will be hidden.
+  - Can tag subscriptions to organize them or check specific tags
+- Fast page
+  - No distracting/slow layout rearrangement
+  - No lazy-loading of comments; they are ready instantly.
+- Settings allow fine-tuned control over when/how comments or related videos are shown:
   1. Shown by default, with click to hide
   2. Hidden by default, with click to show
   3. Never shown
-* Optionally skip sponsored segments using [SponsorBlock](https://github.com/ajayyy/SponsorBlock)'s API
-* Custom video speeds
-* Video transcript
-* Supports all available video qualities: 144p through 2160p
+- Optionally skip sponsored segments using [SponsorBlock](https://github.com/ajayyy/SponsorBlock)'s API
+- Custom video speeds
+- Video transcript
+- Supports all available video qualities: 144p through 2160p
 
 ## Planned features
+
 - [ ] Putting videos from subscriptions or local playlists into the related videos
 - [x] Information about video (geographic regions, region of Tor exit node, etc)
 - [ ] Ability to delete playlists
@@ -76,6 +79,7 @@ Download the zip file under the Releases page. Unzip it anywhere you choose.
 ### Linux/MacOS
 
 Download the tarball under the Releases page and extract it. `cd` into the directory and run
+
 ```
 pip3 install -r requirements.txt
 ```
@@ -92,7 +96,6 @@ To run the program on windows, open `run.bat`. On Linux/MacOS, run `python3 serv
 **Note for Mac users**: If you installed Python from the installer on python.org, you will need to have run the file `Install Certificates.command` in the directory `Applications/Python 3.x` where `x` is the minor version of python. Otherwise, you will get the error `certificate verify failed: unable to get local issuer certificate`. There is a similar file in that directory you can run to get the `python3` command installed for the terminal.
 
 To run it at startup on Windows, right click `run.bat` and click "Create Shortcut." Then, move the shortcut to the Startup folder. You can access the Startup folder by pressing `Windows Key + R` and typing `shell:startup`.
-
 
 Access youtube URLs by prefixing them with `http://localhost:8080/`, For instance, `http://localhost:8080/https://www.youtube.com/watch?v=vBgulDeV2RU`
 You can use an addon such as Redirector ([Firefox](https://addons.mozilla.org/en-US/firefox/addon/redirector/)|[Chrome](https://chrome.google.com/webstore/detail/redirector/ocgpenflpmgnfapjedencafcfakcekcd)) to automatically redirect Youtube URLs to youtube-local. I use the include pattern `^(https?://(?:[a-zA-Z0-9_-]*\.)?(?:youtube\.com|youtu\.be|youtube-nocookie\.com)/.*)` and the redirect pattern `http://localhost:8080/$1` (Make sure you're using regular expression mode).
@@ -136,6 +139,7 @@ In general, Tor video routing will be slower (for instance, moving around in the
 7. Go to the subscriptions manager in youtube-local. In the import area, select your .csv file, then press import.
 
 Supported subscriptions import formats:
+
 - NewPipe subscriptions export JSON
 - Google Takeout CSV
 - Old Google Takeout JSON
@@ -160,6 +164,7 @@ Permission is hereby granted to the youtube-dl project at [https://github.com/yt
 - Ethereum: 0x04828FFa6fa8F68535A22153300e50AfCDC342C4
 
 ## Similar projects
+
 - [invidious](https://github.com/iv-org/invidious) Similar to this project, but also allows it to be hosted as a server to serve many users
 - [Yotter](https://github.com/ytorg/Yotter) Similar to this project and to invidious. Also supports Twitter
 - [FreeTube](https://github.com/FreeTubeApp/FreeTube) (Similar to this project, but is an electron app outside the browser)
