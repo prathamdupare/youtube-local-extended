@@ -1,0 +1,542 @@
+:root {
+  --white-color: #ffffff;
+  --black-color: #000000;
+  --h2-color: #000000;
+  --background-color: #f5f5f5;
+}
+
+body {
+  --interface-color: var(--white-color);
+  --text-color: #222222;
+  --video-background-color: var(--white-color);
+  --link-color-rgb: 0, 0, 238;
+  --visited-link-color-rgb: 85, 26, 139;
+}
+
+header {
+  background-color: var(--white-color);
+}
+
+h2 {
+  color: var(--h2-color);
+}
+
+a.title {
+  color: var(--h2-color);
+}
+
+.title {
+  color: var(--h2-color);
+}
+
+ul,
+ol {
+  list-style: none;
+  border-radius: 15px;
+}
+
+a {
+  text-decoration: none; /* Remove underline */
+  color: rgb(0, 78, 151); /* Inherit the text color from its parent element */
+}
+
+a:visited {
+  color: var(--black-color);
+}
+
+a:hover {
+  color: grey;
+}
+
+summary {
+  background-color: blue;
+}
+
+select {
+  display: flex;
+  justify-content: center;
+  padding: 10px 20px;
+  font-size: 12px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  border: 0.25px solid rgb(175, 175, 175); /* White border */
+  border-radius: 5px;
+  background-color: var(--white-color); /* White background color */
+  color: var(--black-color); /* Black text color */
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+
+.home-lists {
+  display: flex;
+  justify-content: center;
+  width: 90%;
+  padding: 10px;
+  border-radius: 15px;
+  border: 0.2px solid rgb(238, 238, 238);
+  background-color: var(--background-color);
+}
+
+/* .home-lists:hover {
+    color: white;
+    background-color: var(--black-color);
+  } */
+
+option {
+  display: flex;
+  justify-content: center;
+  padding: 10px 20px;
+  font-size: 12px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  border: 0.25px solid rgb(175, 175, 175);
+  border-radius: 5px;
+  background-color: var(--white-color); /* White background color */
+  color: var(--black-color); /* Black text color */
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+
+option {
+  display: flex;
+  justify-content: center;
+  padding: 10px 20px;
+  font-size: 10px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  border: 0.25px solid rgb(175, 175, 175); /* White border */
+  border-radius: 5px;
+  background-color: var(--white-color); /* White background color */
+  color: var(--black-color); /* Black text color */
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+
+.drop-down {
+  background-color: var(--white-color);
+  color: var(--black-color);
+  padding: 10px 20px;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.download-dropdown-label {
+  background-color: var(--white-color);
+  color: var(--black-color);
+  padding: 10px 20px;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+summary {
+  background-color: var(--white-color);
+  color: var(--black-color);
+  padding: 10px 20px;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.comment {
+  border-radius: 20px;
+}
+.comment .permalink {
+  color: var(--black-color);
+}
+
+.setting-item {
+  display: flex;
+  flex-direction: row;
+  background-color: #f8f8f8;
+}
+
+input {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  font-size: 10px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  border: 0.25px solid rgb(175, 175, 175); /* White border */
+  border-radius: 5px;
+  background-color: var(--white-color); /* White background color */
+  color: var(--black-color); /* Black text color */
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+
+input:hover {
+  background-color: var(--black-color); /* Black background color on hover */
+  color: var(--white-color); /* White text color on hover */
+  border-color: var(--black-color); /* Black border color on hover */
+}
+
+.muted {
+  background-color: #888888;
+}
+
+header {
+  background-color: #f5f5f5;
+}
+
+.button,
+.search-button {
+  /* display: flex; */
+  /* justify-content: center; */
+  padding: 10px 20px;
+  font-size: 10px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  border: 0.25px solid rgb(175, 175, 175); /* White border */
+  border-radius: 5px;
+  background-color: var(--white-color); /* White background color */
+  color: var(--black-color); /* Black text color */
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+
+.sub-button {
+  padding: 10px 20px;
+  font-size: 10px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  border: 0.25px solid rgb(175, 175, 175); /* White border */
+  border-radius: 5px;
+  background-color: var(--white-color); /* White background color */
+  color: var(--black-color); /* Black text color */
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+
+.sub-button:hover {
+  background-color: var(--black-color); /* Black background color on hover */
+  color: var(--white-color); /* White text color on hover */
+  border-color: var(--black-color); /* Black border color on hover */
+}
+
+.check-button {
+  display: flex;
+  justify-content: center;
+  padding: 10px 20px;
+  font-size: 10px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  border: 0.25px solid rgb(175, 175, 175); /* White border */
+  border-radius: 5px;
+  background-color: var(--white-color); /* White background color */
+  color: var(--black-color); /* Black text color */
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+
+.check-button:hover {
+  background-color: var(--black-color); /* Black background color on hover */
+  color: var(--white-color); /* White text color on hover */
+  border-color: var(--black-color); /* Black border color on hover */
+}
+
+/* Hover State */
+.button:hover {
+  background-color: var(--black-color); /* Black background color on hover */
+  color: var(--white-color); /* White text color on hover */
+  border-color: var(--black-color); /* Black border color on hover */
+}
+
+.search-button:hover {
+  background-color: var(--black-color); /* Black background color on hover */
+  color: var(--white-color); /* White text color on hover */
+  border-color: var(--black-color); /* Black border color on hover */
+}
+
+.subscribe-button {
+  display: flex;
+  justify-content: center;
+  padding: 10px 20px;
+  font-size: 10px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  border: 0.25px solid black; /* White border */
+  border-radius: 5px;
+  background-color: var(--black-color); /* White background color */
+  color: var(--white-color); /* Black text color */
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+
+/* Hover State */
+.subscribe-button:hover {
+  background-color: #2e2e2e; /* Black background color on hover */
+  color: var(--white-color); /* White text color on hover */
+  border-color: var(--black-color); /* Black border color on hover */
+}
+
+.channel-search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+}
+
+.channel-tabs {
+  display: flex;
+  padding: 10px 20px;
+}
+
+.channel-item {
+  background-color: var(--background-color);
+}
+
+.channel-metadata {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.item-grid {
+  border-right: none;
+}
+
+#home-link {
+  display: flex;
+  justify-content: center;
+  padding: 10px 20px;
+  font-size: 10px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  border: 0.25px solid rgb(175, 175, 175); /* White border */
+  border-radius: 5px;
+  background-color: var(--white-color); /* White background color */
+  color: var(--black-color); /* Black text color */
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+
+#home-link:hover {
+  background-color: var(--black-color); /* Black background color on hover */
+  color: var(--white-color); /* White text color on hover */
+  border-color: var(--black-color); /* Black border color on hover */
+}
+
+.item-metadata {
+  border-radius: 15px;
+  border: 0.2px solid rgb(240, 240, 240);
+  padding: 10px;
+  background-color: var(--white-color);
+}
+
+.avatar {
+  border-radius: 10px;
+}
+
+.summary {
+  padding-left: 15px;
+}
+
+.short-description {
+  padding: 10px;
+  max-width: 1200px;
+}
+
+.video-item {
+  background-color: var(--background-color);
+}
+
+.thumbnail-img {
+  /* padding: 10px; */
+  border-radius: 10px;
+}
+
+.thumbnail-box {
+  border-radius: 15px;
+}
+
+.tab {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.item-checkbox {
+  height: 20px;
+  border-color: 0.25px solid rgb(173, 173, 173);
+}
+
+.home-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  border-radius: 20px;
+}
+
+.subscriptions-sidebar {
+  padding: 20px;
+  border-left-color: none;
+}
+.page-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  /* padding: 10px 20px; */
+  font-size: 10px;
+  /* font-weight: bold; */
+  text-align: center;
+  text-decoration: none;
+  border: 0.25px solid rgb(175, 175, 175); /* White border */
+  border-radius: 5px;
+  background-color: var(--white-color); /* White background color */
+  color: var(--black-color); /* Black text color */
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+
+.page-button:hover {
+  background-color: var(--black-color); /* Black background color on hover */
+  color: var(--white-color); /* White text color on hover */
+  border-color: var(--black-color); /* Black border color on hover */
+}
+
+.filter-dropdown-content {
+  grid-area: dropdown;
+  display: grid;
+  grid-template-columns: auto auto;
+  white-space: nowrap;
+  background-color: var(--white-color);
+  padding: 10px 10px 10px 10px;
+  border-width: 0px 1px 1px 1px;
+  border-style: solid;
+  border-radius: 15px;
+  border-color: rgb(207, 207, 207);
+}
+.filter-dropdown-toggle-cbox {
+  display: none;
+}
+
+.subsciptions-import-eport-form {
+  border-radius: 15px;
+}
+
+.playlist-metadata {
+  display: flex;
+  justify-content: center;
+  border-radius: 15px;
+  border: 0.2px solid rgb(206, 206, 206);
+}
+
+#playlist-export-button {
+  padding: 10px 20px;
+  margin-top: 10px;
+  font-size: 10px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  border: 0.25px solid rgb(175, 175, 175); /* White border */
+  border-radius: 5px;
+  background-color: var(--white-color); /* White background color */
+  color: var(--black-color); /* Black text color */
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+
+#playlist-export-button:hover {
+  background-color: var(--black-color); /* Black background color on hover */
+  color: var(--white-color); /* White text color on hover */
+  border-color: var(--black-color); /* Black border color on hover */
+}
+
+#playlist-edit {
+  display: flex;
+  flex-direction: row;
+}
+
+.playlist-title {
+  margin-left: 100px;
+}
+
+.description {
+  border-radius: 15px;
+  padding: 10px;
+}
+
+.sort-button {
+  /* margin-top: 50px; */
+  /* padding: 10px; */
+  padding: 10px;
+  border-radius: 15px;
+  border: 0.2px solid rgb(196, 196, 196);
+  background-color: var(--white-color);
+  color: var(--black-color);
+}
+
+.sort-button:hover {
+  border-radius: 15px;
+  background-color: var(--black-color);
+  color: var(--white-color);
+}
+
+.search-box {
+  padding-right: 15px;
+  font-size: 16px;
+  border: 0.2px solid var(--black-color);
+  border-radius: 5px;
+  /* width: 300px;  */
+  /* transition: border-color 0.3s; */
+}
+
+.search-box:hover {
+  border: 0.4px solid var(--black-color);
+  background-color: var(--white-color); /* Blue border when focused */
+  color: var(--black-color);
+  outline: none; /* Remove the default focus outline */
+}
+
+.search-box:active {
+  border: 0.4px solid var(--black-color);
+  background-color: var(--white-color); /* Blue border when focused */
+  color: var(--black-color);
+  outline: none; /* Remove the default focus outline */
+}
+
+input[type="number"]:hover {
+  background-color: var(--white-color);
+  color: var(--black-color);
+}
+
+input[type="text"]:hover {
+  background-color: var(--white-color);
+  color: var(--black-color);
+}
+
+input[type="search"] {
+  background-color: var(--white-color);
+  margin-right: 10px;
+  color: var(--black-color);
+}
+form[type="submit"] {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  font-size: 10px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  border: 0.25px solid rgb(175, 175, 175); /* White border */
+  border-radius: 5px;
+  background-color: var(--white-color); /* White background color */
+  color: var(--black-color); /* Black text color */
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}

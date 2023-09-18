@@ -587,7 +587,7 @@ Reload without invidious (for usage of new identity button).</a>
             {% endif %}
         </div>
         <details class="more-info">
-            <summary>More info</summary>
+            <summary class="drop-down">More info</summary>
             <div class="more-info-content">
                 <p>Tor exit node: {{ ip_address }}</p>
                 {% if invidious_used %}
@@ -639,7 +639,7 @@ Reload without invidious (for usage of new identity button).</a>
 
         {% if subtitle_sources %}
             <details id="transcript-details">
-                <summary>Transcript</summary>
+                <summary class="drop-down">Transcript</summary>
                 <div id="transcript-div">
                     <select id="select-tt">
                         {% for source in subtitle_sources %}
@@ -655,7 +655,7 @@ Reload without invidious (for usage of new identity button).</a>
 
         {% if settings.related_videos_mode != 0 %}
             <details class="related-videos-outer" {{'open' if settings.related_videos_mode == 1 else ''}}>
-                <summary>Related Videos</summary>
+                <summary class="drop-down">Related Videos</summary>
                 <nav class="related-videos-inner">
                     {% for info in related %}
                         {{ common_elements.item(info, include_badges=false) }}

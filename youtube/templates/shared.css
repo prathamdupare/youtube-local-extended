@@ -79,15 +79,6 @@ body{
             }
             #site-search .filter-dropdown-content{
                 position: absolute;
-                grid-area: dropdown;
-                display: grid;
-                grid-template-columns: auto auto;
-                white-space: nowrap;
-                background-color: var(--interface-color);
-                padding: 0px 10px 10px 10px;
-                border-width: 0px 1px 1px 1px;
-                border-style: solid;
-                border-color: var(--interface-border-color);
                 top: 0px;
                 z-index:1;
             }
