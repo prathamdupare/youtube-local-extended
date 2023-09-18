@@ -5,6 +5,8 @@
 
 The Youtube API is not used, so no keys or anything are needed. It uses the same requests as the Youtube webpage.
 
+youtube-local-extended is customized specifically for the themes I have or will add. Let's see where this goes.
+
 ## Screenshots
 
 [Gray theme](https://user-images.githubusercontent.com/28744867/64483431-8e1c8e80-d1b6-11e9-999c-14d36ddd582f.png)
@@ -22,7 +24,7 @@ The Youtube API is not used, so no keys or anything are needed. It uses the same
 - Standard pages of Youtube: search, channels, playlists
 - Anonymity from Google's tracking by routing requests through Tor
 - Local playlists: These solve the two problems with creating playlists on Youtube: (1) they're datamined and (2) videos frequently get deleted by Youtube and lost from the playlist, making it very difficult to find a reupload as the title of the deleted video is not displayed.
-- Themes: Light, Gray, and Dark
+- Themes: Light, Gray, Dark, Modern Light
 - Subtitles
 - Easily download videos or their audio
 - No ads
